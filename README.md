@@ -1,3 +1,3 @@
-# Vanilla Redux
+# Redux Vanilla, Redux React
 
 Learning Redux
