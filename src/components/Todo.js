@@ -1,6 +1,7 @@
 import { connect, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { actionCreators } from "../store";
+import { deleteTodo_toolkit } from "../store_toolkit";
 
 const Todo = ({ text, id, deleteTodo }) => {
   const dispatch = useDispatch();
@@ -13,7 +14,8 @@ const Todo = ({ text, id, deleteTodo }) => {
       {/* <button onClick={deleteTodo}>Delete</button> */}
       <button
         onClick={() => {
-          dispatch(actionCreators.deleteTodo(id));
+          // dispatch(actionCreators.deleteTodo(id));
+          dispatch(deleteTodo_toolkit(id));
         }}
       >
         Delete

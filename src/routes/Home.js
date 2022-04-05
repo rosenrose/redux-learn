@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { actionCreators } from "../store";
+import { addTodo_toolkit } from "../store_toolkit";
 import Todo from "../components/Todo";
 
 const Home = ({ todos, addTodo }) => {
   // console.log(todos, dispatch);
   const dispatch = useDispatch();
+
   const [todo, setTodo] = useState("");
   const onChange = (event) => {
     setTodo(event.target.value);
@@ -13,7 +15,8 @@ const Home = ({ todos, addTodo }) => {
   const onSubmit = (event) => {
     event.preventDefault();
     // addTodo(todo);
-    dispatch(actionCreators.addTodo(todo));
+    // dispatch(actionCreators.addTodo(todo));
+    dispatch(addTodo_toolkit(todo));
     setTodo("");
   };
 
