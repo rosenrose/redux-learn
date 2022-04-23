@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/reduex-learn/static/js/main.20af9a03.js",
-    "index.html": "/reduex-learn/index.html",
-    "main.20af9a03.js.map": "/reduex-learn/static/js/main.20af9a03.js.map"
+    "main.js": "/redux-learn/static/js/main.a2434fe4.js",
+    "index.html": "/redux-learn/index.html",
+    "main.a2434fe4.js.map": "/redux-learn/static/js/main.a2434fe4.js.map"
   },
   "entrypoints": [
-    "static/js/main.20af9a03.js"
+    "static/js/main.a2434fe4.js"
   ]
 }
